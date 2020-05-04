@@ -17,11 +17,14 @@ let aBell = `<g class="style-scope yt-icon">
 function btnClick(){
     if (document.getElementById('btn').style.color == 'white'){
         document.getElementById('btn').style.color = '#aaa29a';
+        document.getElementById('btn').style.width = '170px';
         document.getElementById('btn').style.backgroundColor = '#303030';
+        document.getElementById('btn').innerHTML = 'UNSUBSCRIBE';
         document.getElementById('bell').style.width = '55px';
     } else {
         document.getElementById('btn').style.color = 'white';
         document.getElementById('btn').style.backgroundColor = '#c00';
+        document.getElementById('btn').innerHTML = 'SUBSCRIBE';
         document.getElementById('bell').style.width = '0px';
         if (document.getElementById('menu').style.opacity == 1){
             document.getElementById('menu').style.opacity = 0;
