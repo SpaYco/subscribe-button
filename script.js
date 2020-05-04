@@ -23,6 +23,10 @@ function btnClick(){
         document.getElementById('btn').style.color = 'white';
         document.getElementById('btn').style.backgroundColor = '#c00';
         document.getElementById('bell').style.width = '0px';
+        if (document.getElementById('menu').style.opacity == 1){
+            document.getElementById('menu').style.opacity = 0;
+            setTimeout(() => {  document.getElementById('menu').style.display = 'none'; }, 450)
+        }
     }
 }
 
@@ -30,10 +34,8 @@ function bellClick(){
     if (document.getElementById('menu').style.opacity == 0){
         document.getElementById('menu').style.display = 'block';
         setTimeout(() => {  document.getElementById('menu').style.opacity = 1, 150; }, 10)
-        
     } else {
         document.getElementById('menu').style.opacity = 0;
-        
         setTimeout(() => {  document.getElementById('menu').style.display = 'none'; }, 450)
     }
 }
