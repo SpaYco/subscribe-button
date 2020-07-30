@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #909090;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+button {
+    position: fixed;
+    top: 1%;
+    padding: 15px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 49, 49);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    transition: 350ms;
+}
+button:hover {
+    background-color: rgb(54, 54, 54);
+    box-shadow: 1px 1px 10px black;
+}
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 2px solid #909090;
+}
+#con {
+    transition: 350ms;
+    background-color: rgba(49, 49, 49, 0);
+    padding: 25px;
+}
+#container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgba(54, 54, 54, 0);
+}
+
+#container > div:hover {
+    background-color: rgba(54, 54, 54, 0.034);
+}
+
+#like-t, #dislike-t {
+    transition: 250ms;
+}
+
+#container > div > svg {
+    width: 40px;
+    padding: 5px;
+    fill: #909090;
+    transition: 150ms;
+}
